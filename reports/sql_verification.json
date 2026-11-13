@@ -1,0 +1,57 @@
+{
+  "engine": "PostgreSQL 18.6 (PGlite 0.5.15) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.13 (e13ee988ce3d87a738dd8f3661d02223308c412a), 32-bit",
+  "adapter": "PGlite WebAssembly",
+  "sql_files": [
+    {
+      "file": "02_data_quality.sql",
+      "result_sets": 5,
+      "rows": [
+        8,
+        6,
+        789,
+        3,
+        1
+      ]
+    },
+    {
+      "file": "03_sales_analysis.sql",
+      "result_sets": 3,
+      "rows": [
+        1,
+        24,
+        74
+      ]
+    },
+    {
+      "file": "04_customer_analysis.sql",
+      "result_sets": 3,
+      "rows": [
+        93358,
+        1,
+        2
+      ]
+    },
+    {
+      "file": "05_advanced_queries.sql",
+      "result_sets": 3,
+      "rows": [
+        74,
+        2,
+        20
+      ]
+    }
+  ],
+  "native_postgresql_docker_tested": false,
+  "limitations": [
+    "SQL semantics checked via WASM; native PostgreSQL Docker and psycopg COPY not checked."
+  ],
+  "status": "passed",
+  "parity_checks": [
+    "orders, GMV, AOV, mean item count, unique customers",
+    "all monthly metrics including calendar gaps and MoM",
+    "category GMV, item and order counts",
+    "all customer frequencies, monetary values and recencies",
+    "delivery review sample sizes and mean scores",
+    "order facts preserve one row per source order"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "hypothesis": "H0: score distributions identical; H1: different (two-sided)",
+  "method": "Mann-Whitney U, asymptotic, tie-corrected",
+  "n_late": 1855,
+  "n_on_time": 86572,
+  "seed": 42,
+  "bootstrap_resamples": 1000,
+  "sensitivity_including_pre_receipt_reviews": [
+    {
+      "is_late": false,
+      "n": 86536,
+      "mean_score": 4.288712212258482
+    },
+    {
+      "is_late": true,
+      "n": 6211,
+      "mean_score": 2.2658187087425534
+    }
+  ],
+  "status": "ok",
+  "u_statistic": 60315532.0,
+  "p_value": 4.532357579420098e-99,
+  "rank_biserial": -0.24883076305742047,
+  "mean_late": 3.719676549865229,
+  "mean_on_time": 4.288234071062237,
+  "median_late": 4.0,
+  "median_on_time": 5.0,
+  "low_score_rate_late": 0.1935309973045822,
+  "low_score_rate_on_time": 0.0929399805941875,
+  "mean_difference": -0.568557521197008,
+  "mean_difference_ci95": [
+    -0.6303684011114937,
+    -0.5062313794117806
+  ]
+}

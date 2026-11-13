@@ -1,0 +1,15 @@
+check,count
+delivered_missing_timestamp,8
+delivery_before_purchase,0
+carrier_before_purchase,166
+approval_before_purchase,0
+orders_without_items,775
+orders_without_payments,1
+payment_total_mismatch_gt_1_cent,303
+orders_multiple_review_rows,547
+review_id_reused,814
+products_missing_category,610
+categories_without_translation,2
+selected_review_before_receipt,4654
+zero_price_items,0
+zero_payment_rows,9

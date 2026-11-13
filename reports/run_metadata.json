@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-11-05T12:53:34.259928+00:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "rfm_snapshot": "2018-10-18",
+  "money_input_unit": "integer cents",
+  "sample": "delivered orders with items",
+  "packages": {
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "SQLAlchemy": "2.1.8",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2"
+  }
+}

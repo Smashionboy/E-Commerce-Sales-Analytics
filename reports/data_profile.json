@@ -1,0 +1,371 @@
+{
+  "customers": {
+    "rows": 99441,
+    "columns": 5,
+    "dtypes": {
+      "customer_id": "string",
+      "customer_unique_id": "string",
+      "customer_zip_code_prefix": "string",
+      "customer_city": "string",
+      "customer_state": "string"
+    },
+    "nulls": {
+      "customer_id": 0,
+      "customer_unique_id": 0,
+      "customer_zip_code_prefix": 0,
+      "customer_city": 0,
+      "customer_state": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {},
+    "numeric_summary": {}
+  },
+  "sellers": {
+    "rows": 3095,
+    "columns": 4,
+    "dtypes": {
+      "seller_id": "string",
+      "seller_zip_code_prefix": "string",
+      "seller_city": "string",
+      "seller_state": "string"
+    },
+    "nulls": {
+      "seller_id": 0,
+      "seller_zip_code_prefix": 0,
+      "seller_city": 0,
+      "seller_state": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {},
+    "numeric_summary": {}
+  },
+  "orders": {
+    "rows": 99441,
+    "columns": 8,
+    "dtypes": {
+      "order_id": "string",
+      "customer_id": "string",
+      "order_status": "string",
+      "order_purchase_timestamp": "datetime64[ns]",
+      "order_approved_at": "datetime64[ns]",
+      "order_delivered_carrier_date": "datetime64[ns]",
+      "order_delivered_customer_date": "datetime64[ns]",
+      "order_estimated_delivery_date": "datetime64[ns]"
+    },
+    "nulls": {
+      "order_id": 0,
+      "customer_id": 0,
+      "order_status": 0,
+      "order_purchase_timestamp": 0,
+      "order_approved_at": 160,
+      "order_delivered_carrier_date": 1783,
+      "order_delivered_customer_date": 2965,
+      "order_estimated_delivery_date": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {
+      "order_purchase_timestamp": {
+        "min": "2016-09-04 21:15:19",
+        "max": "2018-10-17 17:30:18"
+      },
+      "order_approved_at": {
+        "min": "2016-09-15 12:16:38",
+        "max": "2018-09-03 17:40:06"
+      },
+      "order_delivered_carrier_date": {
+        "min": "2016-10-08 10:34:01",
+        "max": "2018-09-11 19:48:28"
+      },
+      "order_delivered_customer_date": {
+        "min": "2016-10-11 13:46:32",
+        "max": "2018-10-17 13:22:46"
+      },
+      "order_estimated_delivery_date": {
+        "min": "2016-09-30 00:00:00",
+        "max": "2018-11-12 00:00:00"
+      }
+    },
+    "numeric_summary": {}
+  },
+  "products": {
+    "rows": 32951,
+    "columns": 9,
+    "dtypes": {
+      "product_id": "string",
+      "product_category_name": "string",
+      "product_name_lenght": "Int64",
+      "product_description_lenght": "Int64",
+      "product_photos_qty": "Int64",
+      "product_weight_g": "Int64",
+      "product_length_cm": "Int64",
+      "product_height_cm": "Int64",
+      "product_width_cm": "Int64"
+    },
+    "nulls": {
+      "product_id": 0,
+      "product_category_name": 610,
+      "product_name_lenght": 610,
+      "product_description_lenght": 610,
+      "product_photos_qty": 610,
+      "product_weight_g": 2,
+      "product_length_cm": 2,
+      "product_height_cm": 2,
+      "product_width_cm": 2
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {},
+    "numeric_summary": {
+      "product_name_lenght": {
+        "count": 32341.0,
+        "mean": 48.47694876472589,
+        "std": 10.245740725237235,
+        "min": 5.0,
+        "25%": 42.0,
+        "50%": 51.0,
+        "75%": 57.0,
+        "max": 76.0
+      },
+      "product_description_lenght": {
+        "count": 32341.0,
+        "mean": 771.4952846232337,
+        "std": 635.1152246349537,
+        "min": 4.0,
+        "25%": 339.0,
+        "50%": 595.0,
+        "75%": 972.0,
+        "max": 3992.0
+      },
+      "product_photos_qty": {
+        "count": 32341.0,
+        "mean": 2.1889861166939797,
+        "std": 1.7367656379315441,
+        "min": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 3.0,
+        "max": 20.0
+      },
+      "product_weight_g": {
+        "count": 32949.0,
+        "mean": 2276.4724877841513,
+        "std": 4282.038730977007,
+        "min": 0.0,
+        "25%": 300.0,
+        "50%": 700.0,
+        "75%": 1900.0,
+        "max": 40425.0
+      },
+      "product_length_cm": {
+        "count": 32949.0,
+        "mean": 30.81507784758263,
+        "std": 16.914458054065967,
+        "min": 7.0,
+        "25%": 18.0,
+        "50%": 25.0,
+        "75%": 38.0,
+        "max": 105.0
+      },
+      "product_height_cm": {
+        "count": 32949.0,
+        "mean": 16.937661234028347,
+        "std": 13.637554061749494,
+        "min": 2.0,
+        "25%": 8.0,
+        "50%": 13.0,
+        "75%": 21.0,
+        "max": 105.0
+      },
+      "product_width_cm": {
+        "count": 32949.0,
+        "mean": 23.196728277034204,
+        "std": 12.079047453227835,
+        "min": 6.0,
+        "25%": 15.0,
+        "50%": 20.0,
+        "75%": 30.0,
+        "max": 118.0
+      }
+    }
+  },
+  "order_items": {
+    "rows": 112650,
+    "columns": 7,
+    "dtypes": {
+      "order_id": "string",
+      "order_item_id": "Int64",
+      "product_id": "string",
+      "seller_id": "string",
+      "shipping_limit_date": "datetime64[ns]",
+      "price": "int64",
+      "freight_value": "int64"
+    },
+    "nulls": {
+      "order_id": 0,
+      "order_item_id": 0,
+      "product_id": 0,
+      "seller_id": 0,
+      "shipping_limit_date": 0,
+      "price": 0,
+      "freight_value": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {
+      "shipping_limit_date": {
+        "min": "2016-09-19 00:15:34",
+        "max": "2020-04-09 22:35:08"
+      }
+    },
+    "numeric_summary": {
+      "order_item_id": {
+        "count": 112650.0,
+        "mean": 1.1978339991122948,
+        "std": 0.7051240313951733,
+        "min": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "max": 21.0
+      },
+      "price": {
+        "count": 112650.0,
+        "mean": 12065.373901464714,
+        "std": 18363.392805025942,
+        "min": 85.0,
+        "25%": 3990.0,
+        "50%": 7499.0,
+        "75%": 13490.0,
+        "max": 673500.0
+      },
+      "freight_value": {
+        "count": 112650.0,
+        "mean": 1999.0319928983577,
+        "std": 1580.6405412297083,
+        "min": 0.0,
+        "25%": 1308.0,
+        "50%": 1626.0,
+        "75%": 2115.0,
+        "max": 40968.0
+      }
+    }
+  },
+  "order_payments": {
+    "rows": 103886,
+    "columns": 5,
+    "dtypes": {
+      "order_id": "string",
+      "payment_sequential": "Int64",
+      "payment_type": "string",
+      "payment_installments": "Int64",
+      "payment_value": "int64"
+    },
+    "nulls": {
+      "order_id": 0,
+      "payment_sequential": 0,
+      "payment_type": 0,
+      "payment_installments": 0,
+      "payment_value": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {},
+    "numeric_summary": {
+      "payment_sequential": {
+        "count": 103886.0,
+        "mean": 1.0926785129853878,
+        "std": 0.7065837791949955,
+        "min": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "max": 29.0
+      },
+      "payment_installments": {
+        "count": 103886.0,
+        "mean": 2.853348863176944,
+        "std": 2.687050673856479,
+        "min": 0.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 4.0,
+        "max": 24.0
+      },
+      "payment_value": {
+        "count": 103886.0,
+        "mean": 15410.038041699556,
+        "std": 21749.406386472434,
+        "min": 0.0,
+        "25%": 5679.0,
+        "50%": 10000.0,
+        "75%": 17183.75,
+        "max": 1366408.0
+      }
+    }
+  },
+  "order_reviews": {
+    "rows": 99224,
+    "columns": 7,
+    "dtypes": {
+      "review_id": "string",
+      "order_id": "string",
+      "review_score": "Int64",
+      "review_comment_title": "string",
+      "review_comment_message": "string",
+      "review_creation_date": "datetime64[ns]",
+      "review_answer_timestamp": "datetime64[ns]"
+    },
+    "nulls": {
+      "review_id": 0,
+      "order_id": 0,
+      "review_score": 0,
+      "review_comment_title": 87656,
+      "review_comment_message": 58247,
+      "review_creation_date": 0,
+      "review_answer_timestamp": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {
+      "review_creation_date": {
+        "min": "2016-10-02 00:00:00",
+        "max": "2018-08-31 00:00:00"
+      },
+      "review_answer_timestamp": {
+        "min": "2016-10-07 18:32:28",
+        "max": "2018-10-29 12:27:35"
+      }
+    },
+    "numeric_summary": {
+      "review_score": {
+        "count": 99224.0,
+        "mean": 4.08642062404257,
+        "std": 1.3475791311150982,
+        "min": 1.0,
+        "25%": 4.0,
+        "50%": 5.0,
+        "75%": 5.0,
+        "max": 5.0
+      }
+    }
+  },
+  "category_translation": {
+    "rows": 71,
+    "columns": 2,
+    "dtypes": {
+      "product_category_name": "string",
+      "product_category_name_english": "string"
+    },
+    "nulls": {
+      "product_category_name": 0,
+      "product_category_name_english": 0
+    },
+    "exact_duplicates": 0,
+    "duplicate_keys": 0,
+    "date_ranges": {},
+    "numeric_summary": {}
+  }
+}
